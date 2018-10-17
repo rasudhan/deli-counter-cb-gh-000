@@ -3,7 +3,7 @@ katz_deli = []
 
 def line(deli)
   if deli.empty?
-    return "The line is currently empty."
+    puts "The line is currently empty."
   else
     message="The line is currently: "
     deli.each_with_index {|element,index| message+="#{index+1}. #{element}"}
