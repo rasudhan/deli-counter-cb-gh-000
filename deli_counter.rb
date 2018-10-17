@@ -8,6 +8,7 @@ def line(deli)
     message="The line is currently: "
     deli.each_with_index {|element,index| message+="#{index+1}. #{element}"}
     message
+  end
 end
 
 def take_a_number(deli,customer)
