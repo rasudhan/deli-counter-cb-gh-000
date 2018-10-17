@@ -7,7 +7,7 @@ def line(deli)
   else
     message="The line is currently: "
     cust=deli.join(" ")
-    deli.each_with_index {|element,index| cust+="#{index+1}. #{element}"}
+    deli.each_with_index {|element,index| cust+=" #{index+1}. #{element}"}
     puts message
   end
 end
