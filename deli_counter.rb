@@ -6,9 +6,8 @@ def line(deli)
     puts "The line is currently empty."
   else
     message="The line is currently: "
-    cust=""
+    cust=deli.join(" ")
     deli.each_with_index {|element,index| cust+="#{index+1}. #{element}"}
-    message+=cust.join(" ")
     puts message
   end
 end
